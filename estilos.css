@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .lista_menu {
+  display: flex;
+}
+
+header .lista_menu li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+header .lista_menu li a  {
+  text-decoration:none;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(rgba(84, 93, 220,.7), rgba(96, 171, 245, .7)), url(Imagenes/fondo1.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.contenedor1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Special Elite', cursive;
+  margin: 18vh  0;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.contenedor1_titulo {
+  text-align: center;
+}
+/*ESTILOS PARA BOTONES*/
+.contenedor1 a, #Sobre_mi a {
+  font-size: 20px;
+  color: #fff;
+  background: #5cb8ff;
+  padding: 14px 24px;
+  text-decoration: none;
+  width: 128px;
+  display: inline-block;
+  font-family: 'Baloo', cursive;
+}
+
+.logo {
+  color: #fff;
+  font-size: 35px;
+}
+
+.lista_menu {
+  color: #4F398E;
+}
+/*Seccion Sobre_mi*/
+h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: normal;
+}
+ #Sobre_mi .contenedor_sobre_mi{
+   display: flex;
+   justify-content: space-around;
+ }
+
+ #Sobre_mi .descripcion {
+    width: 42%;
+ }
+
+/*Seccion Servicios*/
+.contenedor-Servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Servicio {
+  width: 24%;
+  padding: 34px 30px 38px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.Servicio h4 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.Servicio p {
+  margin-bottom: 20px;
+  height: 194px;
+}
+
+.contenedor-Servicios .violeta {
+  background-image: linear-gradient(to top, #5055df, #6d68f3);
+  box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+
+.contenedor-Servicios .celeste {
+  background-image: linear-gradient(to top, #40a8f9, #5cb8ff);
+  box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.icono {
+  float: right;
+}
