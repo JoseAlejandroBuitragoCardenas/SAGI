@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
   <body>
       <header>
@@ -76,10 +78,52 @@
                 <img class="ondas" src="Imagenes/waves.png" alt="">
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="mis_trabajos">
+          <div class="contenedor4">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><h4>1</h4></div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+                <div class="item"><h4>6</h4></div>
+                <div class="item"><h4>7</h4></div>
+                <div class="item"><h4>8</h4></div>
+                <div class="item"><h4>9</h4></div>
+                <div class="item"><h4>10</h4></div>
+                <div class="item"><h4>11</h4></div>
+                <div class="item"><h4>12</h4></div>
+            </div>
 
           </div>
 
         </section>
       </main>
+      <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+      })
+      </script>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script src="owl/owl.carousel.min.js"></script>
   </body>
 </html>
