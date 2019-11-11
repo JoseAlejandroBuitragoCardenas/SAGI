@@ -133,3 +133,11 @@ h3 {
 .icono {
   float: right;
 }
+/*Seccion mis_trabajos*/
+button.owl-prev, button.owl-next {
+  font-size: 40px !important;
+}
+
+ span {
+   color: #71bcfa;
+ }
