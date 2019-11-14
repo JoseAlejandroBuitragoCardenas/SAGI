@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
   <body>
+    <a id="whatsapp" href="https://api.whatsapp.com/send?phone=3204402155"><img src="Imagenes/whatsapp.png" width="80" height="80" alt=""></a>
       <header>
         <div class="encabezado">
           <div class="contenedor">
@@ -96,7 +97,115 @@
           </div>
         </section>
 
-      </main>
+        /*SECCION PORQUE TRABAJAR CONMIGO*/
+          <section id="Por_que_trabajar">
+            <div class="contenedor5">
+              <h3>¿Por que trabajar conmigo?</h3>
+              <div class="contenedor_trabajar">
+                <div class="item">
+                  <ul>
+                    <li><img src="Imagenes/laptop.png" width="100" height="100" alt=""></li>
+                    <li>Velocidad</li>
+                    <li>Prueba Velocidad</li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <ul>
+                    <li><img src="Imagenes/web-optimization.png" width="100" height="100" alt=""></li>
+                    <li>web-optimization</li>
+                    <li>Prueba web-optimization</li>
+                  </ul>
+                </div>
+                <div class="item">
+                  <ul>
+                    <li><img src="Imagenes/smartphone.png" width="100" height="100" alt=""></li>
+                    <li>smartphone</li>
+                    <li>Prueba smartphone</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+/*SECCION PORQUE TRABAJAR CONMIGO*/
+
+/*SECCION BLOG*/
+        <section id="blog">
+          <div class="contenedor6">
+            <h3>Blog</h3>
+            <div class="contenedor_publicaciones">
+              <div class="publicacion">
+                <img src="Imagenes/blog1.jpg" width="100" height="100" alt="">
+                <div class="contenido">
+                  <h4>BLOG1</h4>
+                  <p>Prueba Blog1</p>
+                  <a target="_blank" href="https://www.google.com/">Leer Mas →</a>
+                 </div>
+              </div>
+              <div class="publicacion">
+                <img src="Imagenes/blog2.jpg" width="100" height="100" alt="">
+                <div class="contenido">
+                  <h4>BLOG2</h4>
+                  <p>Prueba Blog2</p>
+                  <a target="_blank" href="https://www.google.com/">Leer Mas →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+/*SECCION BLOG*/
+
+<section id="que_esperas">
+  <div class="contenedor7">
+    <h3>¿Qué esperas para tener este servicio?</h3>
+    <a target="_blank" href="https://www.google.com/">PINCHA AQUI</a>
+  </div>
+</section>
+/*SECCION BLOG*/
+/*SECCION CONTACTO*/
+<section id="contacto">
+  <?php
+    if (@$_GET['i'] == 'ok') { //EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
+      // code...
+      <h3>la consulta se envio correctamente. Pronto te contactaremos</h3>
+
+      <?php
+    }else {
+      // code...
+    ?>
+  <div class="contenedor8">
+    <h3>Contacto</h3>
+    <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
+      <input type="text" placeholder="Nombre" name="nombre" value="" required>
+      <input type="email" placeholder="Email" name="email" value="" required>
+      <textarea name="mensaje"  placeholder="Mensaje" rows="4" cols="80" required></textarea>
+      <input type="submit" value="ENVIAR MENSAJE" required>
+    </form>
+        <?php } ?>
+
+
+    <div class="contacto-info">
+      <div class="mail"><img src="Imagenes/email.png" width="50" height="50" alt="">jose.buitrago@uan.edu.co</div>
+        <div class="whatsapp"><img  src="Imagenes/whatsapp.png" width="50" height="50" alt="">+57 3204402156</div>
+    </div>
+  </div>
+</section>
+/*SECCION CONTACTO*/
+
+      </main
+
+      <footer>
+        <div class="contenedor8">
+          <div class="redes">
+            <a href="#"><img src="Imagenes/facebook.png" width="50" height="50" alt=""></a>
+            <a href="#"><img src="Imagenes/github-logo.png" width="50" height="50" alt=""></a>
+            <a href="#"><img src="Imagenes/instagram.png" width="50" height="50" alt=""></a>
+            <a href="#"><img src="Imagenes/linkedin.png" width="50" height="50" alt=""></a>
+          </div>
+          <div class="parrafo">
+            <p>2019 Jose Alejandro Buitrago Cardenas | Desarrollador de Software | Colombia</p>
+          </div>
+        </div>
+      </footer> 
 
       <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
