@@ -1,0 +1,36 @@
+
+@media (max-width: 991px){
+#container1{
+	opacity: 100%;
+	z-index: 1;
+	color: white;
+	font-size: 40%;
+
+}
+
+#container1{
+	background-color:#290000db;
+	height: 400px;
+	width: 78%;
+	margin: 15% 0 0 0;
+
+}
+@media (max-width: 781px){
+#container2{
+	opacity: 100%;
+	z-index: 1;
+	color: white;
+	font-size: 30%;
+
+}
+
+#container1{
+	background-color:#290000db;
+	height: 400px;
+	width: 78%;
+
+}
+
+}
+
+}

@@ -1,0 +1,46 @@
+body{
+	background: url("Imagenes/inicio.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+#container1{
+	background-color:#000000db;
+	height: 500px;
+	width: 50%;
+	margin: 5% 0 0 0;
+	border-radius: 10%;
+	align-items: center;
+  	justify-content: center;
+ 	display: flex;
+ 	z-index: 0;
+
+}
+
+#container2{
+	opacity: 100%;
+	z-index: 1;
+	color: white;
+	font-size: 50%;
+
+}
+#btn1{
+	background-color: #400000;
+	border-color: #400000;
+}
+#btn1:hover{
+	background-color: #8c0000;
+	border-color: #8c0000;
+}
+#caja1:focus{
+	background-color: #7b0000;
+		border-color:  #7b0000;
+
+}
