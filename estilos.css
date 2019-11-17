@@ -21,6 +21,10 @@ header .lista_menu li a  {
   text-decoration:none;
 }
 
+header .lista_menu li:hover  {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
 .contenedor {
   max-width: 1280px;
   width: 90%;
@@ -302,4 +306,163 @@ footer p {
   position: fixed;
   top: 80%;
   right: 1%;
+  z-index: 100;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#mis_trabajos, #Sobre_mi, #Por_que_trabajar, #blog, #contacto {
+  padding: 90px 0;
+}
+
+#Servicios {
+  padding: 75px 0;
+}
+
+/*DISPOSITIVOS MOVILES*/
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 800px){
+  .menu-icon {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 35px;
+    margin-top: 15px;
+  }
+
+  header nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    height: 268px;
+    background: #756B95;
+    width: 100%;
+    display: none;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 15px;
+  }
+
+  h1  {
+    font-size: 44px;
+  }
+
+  h2  {
+    font-size: 19px;
+  }
+
+
+  #Sobre_mi .contenedor_sobre_mi {
+    flex-direction: column;
+  }
+
+  #Sobre_mi img {
+    width: 100%;
+    margin-left: 59px;
+  }
+
+  #Sobre_mi .texto {
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  .contenedor-Servicios{
+      flex-direction: column;;
+  }
+
+  .Servicios {
+    width: 82%;
+    padding: 34px 30px 69px 30px
+  }
+
+  .icono {
+    margin-top: 23px;
+  }
+
+  h3 {
+    font-size: 43px;
+  }
+
+  .owl-carousel .owl-item img {
+    margin-left: 70px;
+}
+
+.contenedor_trabajar {
+  flex-direction: column;
+}
+
+#Por_que_trabajar .item {
+  width: 100%;
+}
+
+.item ul {
+  padding: 0;
+}
+
+#blog .contenedor_publicaciones {
+  flex-direction: column;
+}
+
+#blog .publicacion {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#contacto form {
+  width: 100%
+  flex-direction: column;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+}
+
+footer img {
+  margin: 0 24px;
+}
+
+#contacto input[type="submit"] {
+    width: 80%;
+}
+.contenedor-Servicios .violeta {
+    width: 80%;
+    margin-left: 70px;
+}
+
+.contenedor-Servicios .celeste {
+    width: 80%;
+    margin-left: 70px;
+}
+/*PARA TABLETS*/
+@media (min-width: 600px) and (max-width: 800px) {
+  header {
+    height: 70vh;
+  }
+
+  .servicio {
+    width: 57%;
+    padding: 34px 30px 69px 30px;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+
+  .ondas {
+    width: 100%;
+  }
+
+  #blog .publicacion {
+    width: 71%;
+    margin: auto;
+    margin-bottom: 40px;
+  }

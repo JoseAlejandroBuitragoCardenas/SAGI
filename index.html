@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <meta name="viewport" content="width = device-width", "user-scalable = no">
 </head>
   <body>
     <a id="whatsapp" href="https://api.whatsapp.com/send?phone=3204402155"><img src="Imagenes/whatsapp.png" width="80" height="80" alt=""></a>
@@ -16,14 +17,15 @@
         <div class="encabezado">
           <div class="contenedor">
             <p class="logo">SITP Service</p>
+            <img class="menu-icon" src="Imagenes/menu.png" alt="">
             <nav>
               <ul class="lista_menu">
-                <li><a href="">Sobre mi</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Mis trabajos</a></li>
-                <li><a href="">¿Por que trabajar conmigo?</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#Sobre_mi">Sobre mi</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#mis_trabajos">Mis trabajos</a></li>
+                <li><a href="#Por_que_trabajar">¿Por que trabajar conmigo?</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -203,7 +205,7 @@
                   <p>2019 Jose Alejandro Buitrago Cardenas | Desarrollador de Software | Colombia</p>
                 </div>
               </div>
-      </footer> 
+      </footer>
       <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -228,5 +230,34 @@
         }
       })
       </script>
+      <script>
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            scroll = $(window).scrollTop();
+            if(scroll > 100) {
+              $('.encabezado').css({"position":"fixed"});
+              $('.encabezado').css({"width":"100%"});
+              $('.encabezado').css({"top":"0"});
+              $('.encabezado').css({"background":"#fff"});
+              $('.encabezado a').css({"color":"#000"});
+              $('.logo').css({"color":"#000"});
+              $('.encabezado').css({"box-shadow":"rgba(0, 0, 0, 0.22) 6px 1px 1px"});
+              $('.encabezado').css({"z-index":"100"});
+            }else {
+              $('.encabezado').css({"position":"relative"});
+              $('.encabezado').css({"background":"transparent"});
+              $('.encabezado').css({"box-shadow":"0 0 0"});
+              $('.encabezado a').css({"color":"#fff"});
+              $('.logo').css({"color":"#fff"});
+            }
+          })
+
+          $('.menu-icon').click(function(){
+            $('header nav').slideToggle();
+          })
+
+        })
+
+      </script> 
   </body>
 </html>
